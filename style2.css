@@ -1,0 +1,138 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.image-resize{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  background: #E3F2FD;
+  background-position:top;
+}
+.image-resize  .wrapper{
+  width: 450px;
+  height: 288px;
+  padding: 30px;
+  background-image: url(images/img20.jpg);
+  background: #f4f;
+  border-radius: 9px;
+  transition: height 0.2s ease;
+}
+.image-resize .wrapper.active{
+  height: 510px;
+}
+.image-resize .wrapper .upload-box{
+  height: 225px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 2px dashed #5fafaf;
+}
+.image-resize .wrapper.active .upload-box{
+  border: none;
+}
+.image-resize .upload-box p{
+  font-size: 1.06rem;
+  margin-top: 20px;
+}
+.image-resize .wrapper.active .upload-box p{
+  display: none;
+}
+.image-resize .wrapper.active .upload-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.image-resize .wrapper .content{
+  opacity: 0;
+  margin-top: 28px;
+  pointer-events: none;
+}
+.image-resize .wrapper.active .content{
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s 0.05s ease;
+}
+.image-resize .content .row{
+  display: flex;
+  justify-content: space-between;
+}
+.image-resize .content .row .column{
+  width: calc(100% / 2 - 15px);
+}
+.image-resize .row .column label{
+  font-size: 1.09rem;
+}
+.image-resize .sizes .column input{
+  width: 100%;
+  height: 39px;
+  outline: none;
+  margin-top: 7px;
+  padding: 0 15px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid aqua;
+}
+.image-resize .sizes .column input:focus{
+  padding: 0 14px;
+  border: 2px solid #927DFC;
+}
+.image-resize .content .checkboxes{
+  margin-top: 20px;
+}
+.image-resize .checkboxes .column{
+  display: flex;
+  align-items: center;
+}
+.image-resize .checkboxes .column input{
+  width: 17px;
+    color: aqua;
+  height: 17px;
+  margin-right: 9px;
+  accent-color: aqua;
+}
+.image-resize .image-resize .a{
+    text-decoration: none;
+}
+.image-resize .content .download-btn{
+  width: 100%;
+  color: whitesmoke;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.06rem;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin: 50px 0 10px;
+  background: #927DFC;
+   box-shadow: 0px 0 5px #000, 0 0 15px #858585; 
+  transition: 1s;
+}
+.image-resize .content .download-btn:hover{
+    background: white;
+    color: #f4f;
+}
+.image-resize .home-link{
+    color: whitesmoke;
+    font-family: serif;
+    text-decoration: none;
+    background-color: transparent;
+    list-style: none;
+    border-radius: 3px;
+    margin-bottom: auto;
+    display: flex;
+    display: flex;
+    font-family: sans-serif;
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+    
+}

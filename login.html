@@ -1,0 +1,158 @@
+<DOCTYPE>
+    <html>
+    <head>
+        <link rel="shortcut icon" type="x-icon" href="new/cosname%20logo1.png">
+        <title> COSNAME WEB PAGE</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    </head>
+  <body>
+      
+      <nav class="navbar">
+         
+      <div class="navbar-left">
+          <a href="Index.html" class="logo"><img src="new/cosname%20logo1.png"> </a>
+          DATE:<h3 id="current-date"></h3>
+          <div class="search">
+           <img src="new/search.png">
+              <input type="text" placeholder="Search here ">
+              
+          </div>
+          <div class="f-row">
+          <h1 id="current-time"></h1>
+          
+          </div>
+          </div>
+          
+      <div class="navbar-center">
+        <ul>
+          <li> <a href="Index.html" ><img src="new/home.png"><span>HOME</span></a></li>
+          <li> <a href="#" class="Activepage"><img src="new/blog.png"><span>BLOG</span></a> </li>
+          <li> <a href="ABOUT.HTML"><img src="new/message.png"><span>ABOUT</span></a> </li>
+          
+          </ul>  
+      </div>
+         
+      <div class="navbar-right">
+          <img src="new/COSNAME.jpg" class="nav-profile" onclick=" togglemenu()">
+          </div>
+<!----------------profile drop-down---------->    
+  <div class="profile-menu-m" id="profilemenu">
+   <div class="profile-menu">
+     <div class="user-info">
+       <img src="new/COSNAME.jpg">
+         <div>
+         <h3>Joseph Waweru</h3>
+             <a  href="ABOUT.HTML">See more/About</a>
+         </div>
+       </div> 
+      <hr>
+       <a href="login.html" class="profile-menu-main">
+       <img src="new/comment1.png">
+           <p>Give feedback</p>
+           <span>></span>
+       </a> 
+        <a href="ABOUT.HTML" class="profile-menu-main">
+       <img src="new/settings.png">
+           <p>Settings and Privacy</p>
+           <span>></span>
+       </a>
+        <a href="login.html" class="profile-menu-main">
+       <img src="new/more%201.png">
+           <p>Help and support</p>
+           <span>></span>
+       </a>
+        <a href="ABOUT.HTML" class="profile-menu-main">
+       <img src="new/display.jpg">
+           <p>Display and Accessibility</p>
+           <span>></span>
+       </a>
+        <a href="login.html" class="profile-menu-main">
+       <img src="new/log%20out.png">
+           <p>Logout</p>
+           <span>></span>
+       </a>
+
+
+
+     </div>   
+   </div>     
+           
+ </nav>
+      
+
+      
+      
+ <section class="form-blog">
+      
+   <div class="form-box">
+       
+     <div class="wrapper">
+         <h2>FILL THE FORM</h2>
+       <form>
+         <input type="name" placeholder="Enter First Name" required>
+         <input type="name" placeholder="Enter Last Name" required>
+         <input type="email" placeholder="Enter Email" required>
+         <input type="number" placeholder="Enter Phone Number" required>
+         <textarea cols="30" rows="10" placeholder="How Can I Help You?" required></textarea>
+         <button  onclick="messege()" class="button">Submit Form</button>
+		   
+         </form>
+       
+       
+	  
+       </div>
+     <script>
+	  function messege(){
+		  alert("Email Sent. Asante Sana!");
+	  }
+	  </script>
+     
+     </div>   
+      
+        
+      
+</section>     
+    
+	  
+	  
+	  
+	  
+	  
+	  
+ <script>
+   alert(msg());    
+</script>     
+      
+   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>    
+<script>
+    let date = document.getElementById("current-date");
+    
+    setInterval(()=>{
+        let d = new Date();
+        date.innerHTML=d.toLocaleDateString();
+    },1000)
+    </script>
+   <script>
+    let time = document.getElementById("current-time");
+    
+    setInterval(()=>{
+        let d = new Date();
+        time.innerHTML=d.toLocaleTimeString();
+    },1000)
+    </script>
+       
+      
+      
+      
+      <script>
+      
+      let profilemenu = document.getElementById("profilemenu");
+     function togglemenu(){
+       profilemenu.classList.toggle("open-menu");
+     }
+   
+ </script>   
+          
+</body> 
+ </html>  
